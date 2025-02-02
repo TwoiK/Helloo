@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Dear Sir Home Tuition - Premier Home Tutoring in Kathmandu Valley</title>
+    <meta name="description" content="Expert home tuition services in Kathmandu, Lalitpur, and Bhaktapur. Qualified tutors for all subjects, grades 1-12, entrance preparation, and language courses.">
+    <meta name="keywords" content="home tuition Kathmandu, private tutors Nepal, home tutoring services, SEE preparation, +2 tuition, entrance exam preparation">
+
+    <!-- Same header links as index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mongolian&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+            /* Services Hero Section */
+    .services-hero {
+        background: #fff;
+        padding: 20px 15px;
+        text-align: center;
+        margin-top: 180px;
+    }
+
+    .services-hero-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+        color: #033451;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-text p {
+        font-size: 1.4rem;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        padding: 0 15px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 30px auto 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Services Page Styles */
+
+
+.services-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #033451;
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.feature-item {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #185a9d, #43cea2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #185a9d;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature-content ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.feature-content li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.areas-grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.area-column h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #185a9d;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.area-column p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.cta-section {
+    background: linear-gradient(rgba(3, 52, 81, 0.95), rgba(3, 52, 81, 0.95));
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cta-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background: #fff;
+    color: #033451;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-button:hover {
+    background: #43cea2;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.cta-button i {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.1rem;
+    }
+}
+
+    /* Section Headings Style */
+    .main-services h2,
+    .why-choose-us h2,
+    .service-areas h2 {
+        font-family: 'Bodoni Moda', serif;
+        font-size: 4rem;
+        background: linear-gradient(45deg, #185a9d, #43cea2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin: 60px 0 40px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+    .main-services h2::after,
+    .why-choose-us h2::after,
+    .service-areas h2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(45deg, #185a9d, #43cea2);
+    }
+
+    /* Core Services Cards Style */
+    .services-grid {
+        max-width: 1200px;
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        background: white;
+        border-radius: 15px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .service-card h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        color: #185a9d;
+        margin: 20px 0;
+        font-weight: 600;
+    }
+
+    .service-card ul {
+        font-family: 'Poppins', sans-serif;
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .service-card ul li {
+        font-size: 1.1rem;
+        color: #666;
+        margin: 10px 0;
+        line-height: 1.4;
+    }
+
+    .service-card .service-icon {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        background: linear-gradient(45deg, #185a9d, #43cea2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .service-btn {
+        background: #185a9d;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+    }
+
+    .service-btn:hover {
+        background: #43cea2;
+    }
+
+    /* Fade Up Animation */
+    .main-services h2,
+    .service-card {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+    }
+
+    .fade-up-visible {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .services-hero {
+            margin-top: 200px;
+        }
+
+        .services-hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            padding: 0 10px;
+        }
+
+        .hero-image {
+            max-width: 200px;
+            margin: 15px auto;
+        }
+
+        .main-services h2 {
+            font-size: 2.4rem;
+            margin: 30px 0 20px;
+        }
+
+        .service-card h3 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+        }
+
+        .service-card ul li {
+            font-size: 1.6rem;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+
+        .service-btn {
+            font-size: 1.6rem;
+            padding: 15px 35px;
+            margin-top: 20px;
+        }
+    }
+
+    </style>
+</head>
+<body class="body">
+
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-brand">
+        <img src="image/logo.png" alt="Dear Sir Home Tuition Logo" onclick="window.location.href='index.html'" class="logo"/>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><button class="nav-cta" onclick="window.location.href='Apply/parent.html'">Get Started</button></li>
+      </ul>
+  
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+  
+  
+      <!-- End of Navbar  -->
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="services-hero-content">
+            <div class="hero-text">
+                <h1>Expert Home Tuition Services in Kathmandu Valley</h1>
+                <p>Personalized learning solutions for academic excellence</p>
+            </div>
+            <div class="hero-image">
+                <img src="image/service_bg.jpg" alt="Home Tuition Services">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="main-services">
+        <h2>Our Core Services</h2>
+        <div class="services-grid">
+            <!-- Academic Tutoring -->
+            <div class="service-card" style="max-width: 400px; margin: 0 auto;">
+                <div class="service-icon">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3>Academic Tutoring</h3>
+                <ul>
+                    <li>Classes 1-12 all subjects</li>
+                    <li>SEE preparation</li>
+                    <li>+2 Science/Management/Humanities</li>
+                    <li>CBSE/Cambridge curriculum</li>
+                </ul>
+                <button onclick="window.location.href='Apply/parent.html'" class="service-btn">Enquire Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>Why Choose Dear Sir Home Tuition?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-user-check"></i>
+                <div class="feature-content">
+                    <h3>Verified Teachers</h3>
+                    <p>All our tutors undergo a rigorous verification process to ensure the highest quality of education:</p>
+                    <ul>
+                        <li>Thorough background checks and documentation verification</li>
+                        <li>Minimum qualification requirements for each subject level</li>
+                        <li>Regular performance evaluations and student feedback</li>
+                        <li>Experienced teachers with proven track records</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <div class="feature-content">
+                    <h3>Location Flexibility</h3>
+                    <p>We provide comprehensive coverage across the Kathmandu Valley:</p>
+                    <ul>
+                        <li>Services available in Kathmandu, Lalitpur, and Bhaktapur</li>
+                        <li>Home-based tutoring at your convenience</li>
+                        <li>Strategic coverage of all major residential areas</li>
+                        <li>Option for online classes when needed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-clock"></i>
+                <div class="feature-content">
+                    <h3>Flexible Timing</h3>
+                    <p>We accommodate your schedule to ensure optimal learning:</p>
+                    <ul>
+                        <li>Morning and evening slots available</li>
+                        <li>Weekend classes option</li>
+                        <li>Customizable class duration</li>
+                        <li>Adjustable schedule during exam seasons</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <div class="feature-content">
+                    <h3>Progress Tracking</h3>
+                    <p>Comprehensive monitoring of student development:</p>
+                    <ul>
+                        <li>Regular assessment tests and evaluations</li>
+                        <li>Detailed monthly progress reports</li>
+                        <li>Parent-teacher meetings and feedback sessions</li>
+                        <li>Personalized improvement strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="service-areas">
+        <h2>Our Service Areas in Kathmandu Valley</h2>
+        <div class="areas-grid">
+            <div class="area-column">
+                <h3>Kathmandu</h3>
+                <p>Comprehensive coverage across all areas of Kathmandu district</p>
+            </div>
+            <div class="area-column">
+                <h3>Lalitpur</h3>
+                <p>Complete service coverage throughout Lalitpur district</p>
+            </div>
+            <div class="area-column">
+                <h3>Bhaktapur</h3>
+                <p>Full service availability in all areas of Bhaktapur district</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Start Your Learning Journey?</h2>
+            <p>Join thousands of successful students who have achieved academic excellence with Dear Sir Home Tuition</p>
+            <button onclick="window.location.href='Apply/parent.html'" class="cta-button">
+                Get Started Now <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    
+<footer class="footer">
+    <div class="footer-content">
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <p>
+            <i class="far fa-envelope"></i> 
+            <a href="mailto:dearsir.tuition@gmail.com">Email: dearsir.tuition@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i> 
+            Phone: <a href="tel:+9779767478036">+977-9767478036</a>, 
+            <a href="tel:+9779803941210">+977-9803941210</a>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 
+            Address: Banasthali, Kharibot
+          </p>
+        </div>
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="https://facebook.com/yourpage" target="_blank" class="social-link">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://wa.me/+9779846722600" target="_blank" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://instagram.com/yourpage" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h2>Quick Links</h2>
+        <ul class="quick-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Dear Sir Home Tuition. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+  <div class="floating-contact">
+    <a href="tel:+977-9846722600" class="contact-btn">
+      <i class="fas fa-phone-alt"></i>
+      <span>Call 9846722600</span>
+    </a>
+  </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+  
+</body>
+</html>

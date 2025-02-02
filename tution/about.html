@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dear Sir Home Tuition</title>
+
+    <!-- Same font and style imports as index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mongolian&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        /* Modern Typography */
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif !important;
+            color: #2c3e50;
+        }
+
+        /* Ensure navbar stays on top */
+        .navbar {
+            position: relative;
+            z-index: 1000;
+            background: white;
+        }
+
+        body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* About hero section */
+.about-hero {
+    width: 100vw; /* Full viewport width */
+    height: calc(100vh - 80px);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/about_bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+    left: 0;
+    right: 0;
+}
+
+/* Container reset */
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle, transparent 20%, rgba(0, 0, 0, 0.4) 100%);
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .about-hero h1 {
+            font-size: 6em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-hero p {
+            font-size: 1.9em;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Add subtle floating animation to text */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .about-hero-content {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: 600;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.2em;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        /* Mission Section Styles */
+        .mission-section {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .mission-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .mission-text h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .mission-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #3498db;
+        }
+
+        .mission-text p {
+            font-size: 1.4em;
+            line-height: 2.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .mission-text .intro-text {
+            margin-bottom: 40px;
+        }
+
+        .achievement-list {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        .achievement-list li {
+            font-size: 2.2rem;
+            color: #555;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 35px;
+            line-height: 1.6;
+        }
+
+        .achievement-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Journey Section Styles */
+        .journey-section {
+            padding: 100px 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .journey-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 80px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #3498db;
+        }
+
+        .timeline-item {
+            margin-bottom: 100px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -54px;
+            top: 15px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #3498db;
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 3px #3498db;
+        }
+
+        .year {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item h3 {
+            font-size: 2.5em;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item p {
+            font-size: 1.4em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Increase spacing between timeline items */
+        .timeline-item {
+            margin: 80px 0;
+        }
+
+        /* Make timeline line thicker */
+        .timeline::before {
+            width: 3px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mission-content {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 50px);
+                margin-left: 50px !important;
+            }
+
+            .about-hero {
+                height: calc(100vh - 60px); /* Adjust for smaller navbar on mobile */
+            }
+            
+            .about-hero h1 {
+                font-size: 3em;
+            }
+            
+            .about-hero p {
+                font-size: 1.2em;
+            }
+        }
+
+        .achievement-list {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        .achievement-list li {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .achievement-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .values-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .values-image {
+            flex: 1;
+        }
+
+        .mission-img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .values-content {
+            flex: 1;
+        }
+
+        .values-content h2 {
+            font-size: 3.5em;
+            margin-bottom: 40px;
+            color: #2d3748;
+            position: relative;
+        }
+
+        .values-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #2563EB;
+        }
+
+        .value-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+
+        .value-icon {
+            font-size: 2.4em;
+            color: #2563EB;
+            min-width: 40px;
+        }
+
+        .value-text h3 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .value-text p {
+            font-size: 1.6em;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .values-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .values-content h2 {
+                font-size: 3em;
+            }
+
+            .value-text h3 {
+                font-size: 2em;
+            }
+
+            .value-text p {
+                font-size: 1.4em;
+            }
+        }
+
+        /* Message from CEO Section */
+        .ceo-message-section {
+            padding: 100px 0;
+            background: #ffffff;
+        }
+
+        .ceo-message-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .ceo-image {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+
+        .ceo-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .ceo-info h3 {
+            font-size: 2.4em;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+
+        .ceo-role {
+            font-size: 1.6em;
+            color: #2563EB;
+            font-weight: 500;
+        }
+
+        .message-content {
+            flex: 1;
+        }
+
+        .message-content h2 {
+            font-size: 3.5em;
+            color: #2d3748;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .message-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #2563EB;
+        }
+
+        .message-text {
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: #4a5568;
+            margin-bottom: 30px;
+        }
+
+        .see-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #2563EB;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.6em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .see-more-btn:hover {
+            background: #1d4ed8;
+            transform: translateX(5px);
+        }
+
+        .see-more-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .see-more-btn:hover i {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .ceo-message-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .message-content h2::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .ceo-image {
+                flex: none;
+            }
+
+            .message-content h2 {
+                font-size: 3em;
+            }
+
+            .message-text {
+                font-size: 1.6em;
+            }
+
+            .see-more-btn {
+                font-size: 1.4em;
+            }
+        }
+
+        /* Ready to Start Section */
+        .ready-start-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(37, 99, 235, 0.05), rgba(37, 99, 235, 0.1));
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ready-start-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(37, 99, 235, 0.2), transparent);
+        }
+
+        .ready-start-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .ready-start-content h2 {
+            font-size: 3.6em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .ready-start-content p {
+            font-size: 1.8em;
+            color: #4a5568;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.6em;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn.primary {
+            background: #2563EB;
+            color: white;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.1);
+        }
+
+        .cta-btn.primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        .cta-btn.secondary {
+            background: white;
+            color: #2563EB;
+            border: 2px solid #2563EB;
+        }
+
+        .cta-btn.secondary:hover {
+            background: rgba(37, 99, 235, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .cta-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .cta-btn:hover i {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .ready-start-section {
+                padding: 60px 0;
+            }
+
+            .ready-start-content h2 {
+                font-size: 2.8em;
+            }
+
+            .ready-start-content p {
+                font-size: 1.6em;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cta-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 12px 24px;
+                font-size: 1.4em;
+            }
+        }
+
+    </style>
+</head>
+<body class="body">
+      <!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-brand">
+        <img src="image/logo.png" alt="Dear Sir Home Tuition Logo" onclick="window.location.href='index.html'" class="logo"/>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><button class="nav-cta" onclick="window.location.href='Apply/parent.html'">Get Started</button></li>
+      </ul>
+  
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+  
+  
+      <!-- End of Navbar  -->
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Transforming Education</h1>
+            <p>Empowering Nepal's Future in Home Tuition Through Personalized Learning</p>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Expert Tutors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2,000+</div>
+                <div class="stat-label">Happy Students</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p class="intro-text">Though we're young, established just a year ago,
+                         Dear Sir Home Tuition has quickly become a trusted name in personalized education 
+                         across Kathmandu Valley. Our rapid growth and high success rate demonstrate our
+                          commitment to transforming education through innovative approaches and dedicated
+                           expert tutors. <b> Our mission is to bring quality education to every child in Nepal, 
+                            ensuring that no one needs to worry about the standard of their learning.</b>
+                    </p>
+                    <p>In just one year, we've successfully:</p>
+
+                    <ul class="achievement-list">
+                        <li>Built a network of 1000+ verified expert tutors</li>
+                        <li>Helped 2000+ students achieve their academic goals</li>
+                        <li>Maintained a 95% student satisfaction rate</li>
+                        <li>Expanded our services across Kathmandu Valley</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="values-container">
+            <div class="values-image">
+                <img src="image/about_mission.jpg" alt="Our Values" class="mission-img">
+            </div>
+            <div class="values-content">
+                <h2>Our Values</h2>
+                
+                <div class="value-item">
+                    <div class="value-icon">★</div>
+                    <div class="value-text">
+                        <h3>Excellence</h3>
+                        <p>Committed to delivering the highest quality education</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-icon">🎯</div>
+                    <div class="value-text">
+                        <h3>Personalization</h3>
+                        <p>Tailored learning approaches for each student</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-icon">🤝</div>
+                    <div class="value-text">
+                        <h3>Trust</h3>
+                        <p>Building lasting relationships with students and parents</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-icon">📚</div>
+                    <div class="value-text">
+                        <h3>Growth</h3>
+                        <p>Fostering continuous learning and development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Journey Section -->
+    <section class="journey-section">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="year">2081</div>
+                <h3>Foundation</h3>
+                <p>Started with a vision to transform home tuition in Kathmandu Valley</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">Q2 2081</div>
+                <h3>Initial Growth</h3>
+                <p>Expanded to 500+ registered tutors and 1000+ students</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">Q3 2081</div>
+                <h3>Digital Platform</h3>
+                <p>Launched our digital platform for seamless tutor-student matching</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">End of 2081</div>
+                <h3>Today</h3>
+                <p>Serving 2000+ students with 1000+ expert tutors across Kathmandu Valley</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message from CEO Section -->
+    <section class="ceo-message-section">
+        <div class="container">
+            <div class="ceo-message-content">
+                <div class="ceo-image">
+                    <img src="image/founder.jpg" alt="Rabikiran Shrestha" class="ceo-img">
+                    <div class="ceo-info">
+                        <h3>Rabikiran Shrestha</h3>
+                        <span class="ceo-role">Founder & CEO</span>
+                    </div>
+                </div>
+                
+                <div class="message-content">
+                    <h2>Message from CEO</h2>
+                    <p class="message-text">
+                        At Dear Sir Home Tuition, we believe in transforming education through personalized learning experiences. Since our inception in 2018, we've been committed to bridging the gap between students' potential and their academic achievements. Our journey has been driven by the vision of making quality education accessible to every student in Nepal.
+                    </p>
+                    <button class="see-more-btn" onclick="window.location.href='blog.html#ceo-message'">
+                        See More 
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Ready to Start Section -->
+    <section class="ready-start-section">
+        <div class="container">
+            <div class="ready-start-content">
+                <h2>Ready to Start Your Learning Journey?</h2>
+                <p>Join thousands of successful students who have transformed their academic performance with Dear Sir Home Tuition</p>
+                
+                <div class="cta-buttons">
+                    <a href="Apply/parent.html" class="cta-btn primary">
+                        Find A Tutor
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="contact.html" class="cta-btn secondary">
+                        Contact Us
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same Footer/Newsletter section as index.html -->
+    <div class="newsletter-container">
+        <h2 class="newsletter-heading">Stay Updated</h2>
+        <p class="newsletter-text">Subscribe to our newsletter for latest updates</p>
+        <form id="newsletterForm" class="newsletter-form">
+            <input type="email" id="newsletterEmail" placeholder="Enter Your Email" required />
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <p class="copyright">Dear Sir Home Tuition &copy; 2024. All rights reserved.</p>
+
+    <!-- Same floating contact button as index.html -->
+    <div class="floating-contact">
+        <a href="tel:+977-9846722600" class="contact-btn">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call 9846722600</span>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+<script src="script.js"></script>
+    
+</body>
+</html>
